@@ -6,6 +6,8 @@
     alacritty	
     spotify
     libreoffice
+
+    adw-gtk3
     lxappearance-gtk3
 
     neovim
