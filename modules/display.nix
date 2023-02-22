@@ -30,5 +30,6 @@
     gelasio
     merriweather
     source-code-pro
+    nerdfonts
   ];
 }
