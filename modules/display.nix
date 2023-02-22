@@ -31,5 +31,6 @@
     merriweather
     source-code-pro
     nerdfonts
+    jetbrains-mono
   ];
 }
