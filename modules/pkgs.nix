@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     neovim
     git
+    macchina
   ];
   services.udisks2.enable = true; 
 }
