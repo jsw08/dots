@@ -82,7 +82,7 @@
 
       		    # Keybinds
       		    $mainMod = ALT
-      		    bind = $mainMod, RETURN, exec, kitty
+      		    bind = $mainMod, RETURN, exec, alacritty
       		    bind = $mainMod_SHIFT, RETURN, exec, firefox
 
       		    bind = $mainMod, Q, killactive, 
