@@ -6,8 +6,15 @@
   };
   services.greetd = {
     enable = true;
-    package = pkgs.greetd.gtkgreet;
+    settings = {
+      default_session = {
+	command = "gtkgreet -c Hyprland";
+      };
+    };
   };
+  environment.systemPackages = [
+    pkgs.greetd.gtkgreet
+  ];
 
   hardware.opengl = {
     driSupport = true;
