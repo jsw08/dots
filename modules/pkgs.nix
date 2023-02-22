@@ -4,7 +4,7 @@
   environment.systemPackages = with pkgs; [
     neovim
     git
-    macchina
+    pfetch
   ];
   services.udisks2.enable = true; 
 }
