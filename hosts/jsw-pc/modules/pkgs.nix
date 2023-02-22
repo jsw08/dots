@@ -8,7 +8,7 @@
     libreoffice
 
     adw-gtk3
-    lxappearance-gtk3
+    lxappearance
 
     neovim
     brightnessctl
