@@ -6,7 +6,7 @@
   };
   services.greetd = {
     enable = true;
-    package = greetd.gtkgreet;
+    package = pkgs.greetd.gtkgreet;
   };
 
   hardware.opengl = {
