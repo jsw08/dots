@@ -12,6 +12,7 @@
       pull="git fetch";
       push="git push origin";
     };
+    interactiveShellInit = "pfetch";
   };	
   programs.starship = {
     enable = true;
