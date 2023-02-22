@@ -21,7 +21,7 @@
 
   # Autologin
   services.xserver.displayManager = {
-    defaultSession = "Hyprland";
+    defaultSession = "hyprland";
     autoLogin = {
       enable = true;
       user = "jsw";
