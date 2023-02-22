@@ -7,13 +7,15 @@
   services.greetd = {
     enable = true;
     settings = {
+      terminal.vt = 1;	
       default_session = {
-	command = "gtkgreet -c Hyprland";
+	command = "cage -- GTK_THEME=Adwaita:dark gtkgreet -c Hyprland";
       };
     };
   };
   environment.systemPackages = [
     pkgs.greetd.gtkgreet
+    pkgs.cage
   ];
 
   hardware.opengl = {
