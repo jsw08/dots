@@ -6,18 +6,9 @@
       window.decorations = "none";
       font = {
 	normal = {
-	  family = "";
+	  family = "monospace";
 	};
-	italic = {
-	  family = "";
-	};
-	bold = {
-	  family = "";
-	};
-	bold_italic = {
-	  family = "";
-	};
-	size = 13;
+	size = 12;
       };
     };
   };

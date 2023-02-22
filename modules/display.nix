@@ -2,11 +2,13 @@
 {
   services.xserver = {
     enable = true;
-    displayManager = {
-      gdm.enable = true;
-    };
     videoDrivers = [ "modesetting" ];
   };
+  services.greetd = {
+    enable = true;
+    package = greetd.gtkgreet;
+  };
+
   hardware.opengl = {
     driSupport = true;
     driSupport32Bit = true;
