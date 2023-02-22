@@ -6,6 +6,7 @@
     alacritty	
     spotify
     libreoffice
+    lxappearance-gtk3
 
     neovim
     brightnessctl
