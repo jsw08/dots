@@ -3,7 +3,7 @@
   services.xserver = {
     enable = true;
     displayManager = {
-      lightdm.enable = true;
+      gdm.enable = true;
     };
     videoDrivers = [ "modesetting" ];
   };
