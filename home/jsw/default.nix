@@ -27,6 +27,6 @@
     ];
     services.udiskie.enable = true;
 
-    imports = [ ./hyprland.nix ./wofi/default.nix ./git.nix ./fish.nix ./kitty.nix ]; 
+    imports = [ ./hyprland.nix ./wofi/default.nix ./git.nix ./fish.nix ./alacritty.nix ]; 
   };
 }

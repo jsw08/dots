@@ -3,7 +3,7 @@
   environment.systemPackages = with pkgs; [
     libsForQt5.polkit-kde-agent
     firefox-bin
-    kitty
+    alacritty	
     spotify
     libreoffice
 
