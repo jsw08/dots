@@ -4,21 +4,21 @@
     enable = true;
     settings = {
       window.decorations = "none";
-    };
-    font = {
-      normal = {
-	family = "";
+      font = {
+	normal = {
+	  family = "";
+	};
+	italic = {
+	  family = "";
+	};
+	bold = {
+	  family = "";
+	};
+	bold_italic = {
+	  family = "";
+	};
+	size = 13;
       };
-      italic = {
-	family = "";
-      };
-      bold = {
-	family = "";
-      };
-      bold_italic = {
-	family = "";
-      };
-      size = 13;
     };
   };
 }
