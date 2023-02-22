@@ -19,6 +19,10 @@
     home.packages = with pkgs; [ 
       # Steam
       steam
+
+      # Obs
+      obs-studio
+      qt6.qtwayland
     ];
     services.udiskie.enable = true;
 

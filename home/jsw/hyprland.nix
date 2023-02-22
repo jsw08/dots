@@ -14,7 +14,7 @@
 		    workspace = eDP-1,5
 
       		    monitor = HDMI-A-2,preferred,1920x0,1
-		    workspace = HDMI-A-2,1
+		    workspace = HDMI-A-2,
 
       		    # Autostart
       		    # exec-once=/usr/lib/polkit-kde-authentication-agent-1
