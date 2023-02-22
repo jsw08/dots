@@ -4,6 +4,8 @@
     libsForQt5.polkit-kde-agent
     firefox-bin
     kitty
+    spotify
+    libreoffice
 
     neovim
     brightnessctl

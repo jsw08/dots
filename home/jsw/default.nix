@@ -17,7 +17,8 @@
     programs.home-manager.enable = true;
 
     home.packages = with pkgs; [ 
-      # Steam
+      glxinfo
+      rustdesk
       steam
 
       # Obs
