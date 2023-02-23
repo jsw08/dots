@@ -9,7 +9,7 @@
     nixosConfigurations.jsw-pc = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = attrs;
-      overlays = [ hyprland ];
+      overlays = [ hyprland home-manager ];
       modules = [ ./hosts/jsw-pc/default.nix ];
     };
     nixosConfigurations.jsw-server = nixpkgs.lib.nixosSystem {
