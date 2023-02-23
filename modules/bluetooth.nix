@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   hardware.bluetooth.enable = true;
-  enironment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     bluetuith
   ];
 }
