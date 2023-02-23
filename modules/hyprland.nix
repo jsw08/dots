@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, hyprland, ... }:
 {
   imports = [ hyprland.nixosModules.default ];	
   programs.hyprland = {
