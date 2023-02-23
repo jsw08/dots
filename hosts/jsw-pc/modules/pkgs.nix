@@ -13,7 +13,6 @@
     neovim
     brightnessctl
     pulsemixer
-    bluetuith
     wl-clipboard
   ];
   services.power-profiles-daemon.enable = true;
