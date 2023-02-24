@@ -29,6 +29,7 @@
     };
   };
 
+  services.xserver.windowManager.i3.enable = true;
   networking.hostName = "jsw-pc";
 }
 
