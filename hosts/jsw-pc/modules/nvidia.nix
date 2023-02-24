@@ -15,7 +15,9 @@ let
   '';
 in {
   boot.initrd.kernelModules = [ "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
-  boot.extraModprobeConfig = "options nvidia-drm modeset=1";
+  boot.extraModprobeConfig = ''
+    options nvidia-drm modeset=1
+  '';
   environment.sessionVariables = {
     LIBVA_DRIVER_NAME = "nvidia";
     XDG_SESSION_TYPE = "wayland";
