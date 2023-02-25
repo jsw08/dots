@@ -7,13 +7,9 @@
     spotify
     libreoffice
 
-    adw-gtk3
-    lxappearance
-
     neovim
     brightnessctl
     pulsemixer
-    wl-clipboard
   ];
   services.power-profiles-daemon.enable = true;
 }

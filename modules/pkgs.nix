@@ -5,6 +5,7 @@
     neovim
     git
     pfetch
+    killall
   ];
   services.udisks2.enable = true; 
 }
