@@ -13,9 +13,9 @@
     };
   };
   programs.java.enable = true; 
-  environment.systemPackages = with pkgs; {
+  environment.systemPackages = with pkgs; [
     gnome3.adwaita-icon-theme
     lutris
     (steam.override { withJava = true; })
-  };
+  ];
 }
