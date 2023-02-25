@@ -5,14 +5,14 @@
     enable = true;
     nvidiaPatches = true;
   };
-#  environment.sessionVariables = {
-#    HYPRLAND_LOG_WLR = "1";
-#    GTK_IM_MODULE = "fcitx";
-#    QT_IM_MODULE = "fcitx";
-#    SDL_IM_MODULE = "fcitx";
-#    GLFW_IM_MODULE = "fcitx";
-#    XMODIFIERS = "@im=fcitx";
-#  };
+  environment.sessionVariables = {
+    HYPRLAND_LOG_WLR = "1";
+    GTK_IM_MODULE = "fcitx";
+    QT_IM_MODULE = "fcitx";
+    SDL_IM_MODULE = "fcitx";
+    GLFW_IM_MODULE = "fcitx";
+    XMODIFIERS = "@im=fcitx";
+  };
   nix.settings = {
     substituters = [
       "https://hyprland.cachix.org"

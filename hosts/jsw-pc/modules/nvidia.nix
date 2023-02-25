@@ -5,10 +5,10 @@ let
     export __NV_PRIME_RENDER_OFFLOAD_PROVIDER=NVIDIA-G0
     export __GLX_VENDOR_LIBRARY_NAME=nvidia
     export __VK_LAYER_NV_optimus=NVIDIA_only
-#    export LIBVA_DRIVER_NAME=nvidia
-#    export XDG_SESSION_TYPE=wayland
-#    export __GLX_VENDOR_LIBARY_NAME=nvidia
-#    export WLR_NO_HARDWARE_CURSORS=1
+    export LIBVA_DRIVER_NAME=nvidia
+    export XDG_SESSION_TYPE=wayland
+    export __GLX_VENDOR_LIBARY_NAME=nvidia
+    export WLR_NO_HARDWARE_CURSORS=1
 
     #GBM_BACKEND="nvidia-drm";
     exec "$@"
