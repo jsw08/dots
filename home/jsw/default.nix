@@ -19,7 +19,6 @@
     home.packages = with pkgs; [ 
       glxinfo
       rustdesk
-      steam
 
       # Obs
       obs-studio

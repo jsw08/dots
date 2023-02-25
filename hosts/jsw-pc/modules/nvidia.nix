@@ -26,20 +26,7 @@ in {
     WLR_NO_HARDWARE_CURSORS = "1";
   };
 
-  #hardware.nvidia = {
-  #  prime = {
-  #    offload.enable = true;
-  #    intelBusId = "PCI:00:02:0";
-  #    nvidiaBusId = "PCI:01:00:0";
-  #  };
-  #  modesetting.enable = true;
-  #  powerManagement = {
-  #    enable = true;
-  #    finegrained = true;
-  #  };
-  #};
   services.xserver.videoDrivers = [ "nvidia" ];
-
   environment.systemPackages = with pkgs; [
     pr 	
     libsForQt5.qt5.qtwayland
