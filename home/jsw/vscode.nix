@@ -15,6 +15,7 @@
       "vim.sneakReplacesF" = true;
       "files.autoSave" = "onFocusChange";
       "vim.useSystemClipboard" = true;
+      "editor.tabSize" = 2;
     };
   };
 }
