@@ -85,17 +85,17 @@
       		    bind = $mainMod, RETURN, exec, alacritty
       		    bind = $mainMod_SHIFT, RETURN, exec, firefox
 
-      		    bind = $mainMod, Q, killactive, 
-      		    bind = $mainMod, SPACE, togglefloating, 
-      		    bind = $mainMod, P, togglesplit, # dwindle
+      		    bind = $mainMod, Q, killactive 
+      		    bind = $mainMod, SPACE, togglefloating 
+      		    bind = $mainMod, P, togglesplit # dwindle
       		    bind = $mainMod, F, fullscreen
-      		    bind = $mainMod_SHIFT, E, exit, 
+      		    bind = $mainMod_SHIFT, E, exit 
 
 		    bind = $mainMod, D, exec, wofi -i --show drun
 		    bind = $mainMod_SHIFT, D, exec, discord
-		    bind = $mainMod, A, exec, alacritty pulsemixer
-		    bind = $mainMod, N, exec, alacritty nmtui
-		    bind = $mainMod, B, exec, alacritty bluetuith
+		    bind = $mainMod, A, exec, alacritty -e pulsemixer
+		    bind = $mainMod, N, exec, alacritty -e nmtui
+		    bind = $mainMod, B, exec, alacritty -e bluetuith
 
       		    bind = $mainMod, H, movefocus, l
       		    bind = $mainMod, L, movefocus, r
