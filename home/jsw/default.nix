@@ -19,6 +19,7 @@
     home.packages = with pkgs; [ 
       glxinfo
       rustdesk
+      webcord
 
       # Obs
       obs-studio
