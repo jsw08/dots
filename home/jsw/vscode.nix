@@ -16,6 +16,7 @@
       "files.autoSave" = "onFocusChange";
       "vim.useSystemClipboard" = true;
       "editor.tabSize" = 2;
+      "git.enableSmartCommit" = true;
     };
   };
 }
