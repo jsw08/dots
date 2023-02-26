@@ -9,7 +9,6 @@
 
     neovim
     brightnessctl
-    pulsemixer
   ];
   services.power-profiles-daemon.enable = true;
 }

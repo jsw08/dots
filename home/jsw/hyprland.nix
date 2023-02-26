@@ -96,7 +96,12 @@
 			bind = $mainMod, N, exec, alacritty -e nmtui
 			bind = $mainMod, B, exec, alacritty -e bluetuith
 
-
+			binde=, XF86AudioRaiseVolume, exec, pulsemixer --change=volume +5
+			binde=, XF86AudioLowerVolume, exec, pulsemixer --change=volume -5
+			binde=, XF86AudioMute, exec, pulsemixer --mute
+			binde=, XF86AudioPause, exec, playerctl play-pause 
+			binde=, XF86AudioNext, exec, playerctl next
+			binde=, XF86AudioPrev, exec, playerctl previous
 
 			bind = $mainMod, H, movefocus, l
 			bind = $mainMod, L, movefocus, r
