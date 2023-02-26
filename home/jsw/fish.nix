@@ -12,7 +12,7 @@
       pull="git fetch";
       push="git push origin";
     };
-    interactiveShellInit = "pfetch";
+    interactiveShellInit = "set fish_greeting ""; pfetch";
   };	
   programs.starship = {
     enable = true;
