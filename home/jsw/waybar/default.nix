@@ -116,7 +116,7 @@
             car = "";
             default = [ "" "" "" ];
           };
-          on-click = "pavucontrol";
+          on-click = "alacritty pulsemixer";
         };
       }];
       style = ''
