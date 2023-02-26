@@ -35,6 +35,7 @@
           "network"
           "pulseaudio"
           "battery"
+          "tray"
         ];
 
         # Modules
