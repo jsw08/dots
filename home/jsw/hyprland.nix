@@ -89,12 +89,14 @@
 			bind = $mainMod, F, fullscreen
 			bind = $mainMod_SHIFT, E, exit 
 
-			bind = $mainMod, D, exec, wofi -i --show drun
+			bindr = $mainMod, D, exec, pkill wofi || wofi -i --show drun
 			bind = $mainMod_SHIFT, D, exec, discord
 			bind = $mainMod, S, exec, spotify
 			bind = $mainMod, A, exec, alacritty -e pulsemixer
 			bind = $mainMod, N, exec, alacritty -e nmtui
 			bind = $mainMod, B, exec, alacritty -e bluetuith
+
+
 
 			bind = $mainMod, H, movefocus, l
 			bind = $mainMod, L, movefocus, r
