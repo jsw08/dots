@@ -22,6 +22,7 @@
     home.packages = with pkgs; [ 
       glxinfo
       rustdesk
+      pywal
 
       # Obs
       obs-studio
