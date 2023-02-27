@@ -10,16 +10,16 @@
       vscode-extensions.bbenoist.nix
     ];
     userSettings = {
+      "[python]" = {
+	"editor.formatOnType" = true;
+      };
       "editor.tabSize" = 2;
       "files.autoSave" = "onFocusChange";
       "git.enableSmartCommit" = true;
-      "vim.sneak" = true;
-      "vim.sneakReplacesF" = true;
       "vim.useSystemClipboard" = true;
       "window.menuBarVisibility" = "hidden";
-      "[python]" = {
-	"editor.formatOnType" = true;
-      };    
+      "vim.smartRelativeLine" = true;
+      "workbench.colorTheme" = "GrunBoxTheme";    
     };
   };
 }
