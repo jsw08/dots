@@ -10,13 +10,16 @@
       vscode-extensions.bbenoist.nix
     ];
     userSettings = {
-      "window.menuBarVisibility" = "hidden";
+      "editor.tabSize" = 2;
+      "files.autoSave" = "onFocusChange";
+      "git.enableSmartCommit" = true;
       "vim.sneak" = true;
       "vim.sneakReplacesF" = true;
-      "files.autoSave" = "onFocusChange";
       "vim.useSystemClipboard" = true;
-      "editor.tabSize" = 2;
-      "git.enableSmartCommit" = true;
+      "window.menuBarVisibility" = "hidden";
+      "[python]" = {
+	"editor.formatOnType" = true;
+      };    
     };
   };
 }

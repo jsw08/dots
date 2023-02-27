@@ -9,7 +9,7 @@
       checkout="git checkout";
       clone="git clone";
       commit="git commit -m";
-      pull="git fetch";
+      pull="git pull";
       push="git push origin";
     };
     interactiveShellInit = "set fish_greeting ''; pfetch";
