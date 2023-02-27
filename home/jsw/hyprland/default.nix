@@ -18,7 +18,7 @@
 			# Autostart
 			# exec-once=/usr/lib/polkit-kde-authentication-agent-1
 			exec = fish -c "pkill waybar; waybar"
-			exec-once = swaybg -m fit -i ~/.config/hypr/background.jpg 
+			exec-once = swaybg -m fit -i /home/jsw/.config/hypr/background.jpg 
 
 			# Keyboard and mouse
 			input {
