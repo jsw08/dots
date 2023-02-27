@@ -33,7 +33,7 @@
     imports = [ 
       ./hyprland/default.nix 
       ./wofi/default.nix 
-      ./alacritty/default.nix 
+      ./alacritty.nix 
       ./git.nix 
       ./fish.nix 
       ./vscode.nix 
