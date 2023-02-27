@@ -15,7 +15,7 @@
     # General modules
     ../../modules/default.nix
     ../../modules/display.nix
-    ../../modules/hyprland.nix
+#    ../../modules/hyprland.nix
     ../../modules/pipewire.nix
     ../../modules/bluetooth.nix
     ../../modules/games.nix

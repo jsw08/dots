@@ -1,6 +1,9 @@
 { config, pkgs, hyprland, home-manager, ... }:
 {
-  imports = [ home-manager.nixosModules.home-manager ./waybar/default.nix ]; 
+  imports = [ 
+    home-manager.nixosModules.home-manager 
+  #  ./waybar/default.nix 
+  ]; 
 
   users.users.jsw = {
     isNormalUser = true;
@@ -26,6 +29,13 @@
     ];
     services.udiskie.enable = true;
 
-    imports = [ ./hyprland.nix ./wofi/default.nix ./git.nix ./fish.nix ./alacritty.nix ./vscode.nix ]; 
+    imports = [ 
+    #  ./hyprland.nix 
+    #  ./wofi/default.nix 
+      ./git.nix 
+      ./fish.nix 
+      ./alacritty.nix 
+      ./vscode.nix 
+    ]; 
   };
 }
