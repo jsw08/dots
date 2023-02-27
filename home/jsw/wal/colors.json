@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/jsw/.config/hypr/background.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#070E19",
+        "foreground": "#abbcba",
+        "cursor": "#abbcba"
+    },
+    "colors": {
+        "color0": "#070E19",
+        "color1": "#A04D32",
+        "color2": "#E0602D",
+        "color3": "#A0604E",
+        "color4": "#66827E",
+        "color5": "#CFA66C",
+        "color6": "#EAA864",
+        "color7": "#abbcba",
+        "color8": "#778382",
+        "color9": "#A04D32",
+        "color10": "#E0602D",
+        "color11": "#A0604E",
+        "color12": "#66827E",
+        "color13": "#CFA66C",
+        "color14": "#EAA864",
+        "color15": "#abbcba"
+    }
+}
