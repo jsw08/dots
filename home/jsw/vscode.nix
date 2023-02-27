@@ -20,7 +20,7 @@
       "vim.useSystemClipboard" = true;
       "window.menuBarVisibility" = "hidden";
       "vim.smartRelativeLine" = true;
-      "workbench.colorTheme": "Catppuccin Macchiato"
+      "workbench.colorTheme" = "Catppuccin Macchiato";
     };
   };
 }
