@@ -3,7 +3,7 @@
   imports = [ hyprland.homeManagerModules.default ];
 
   services.dunst.enable = true;
-  home.file.".config/hypr/background.jpg".source = "./background.jpg";
+  home.file.".config/hypr/background.jpg".source = ./background.jpg;
   wayland.windowManager.hyprland = {
     enable = true;
     nvidiaPatches = true;
