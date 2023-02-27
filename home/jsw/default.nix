@@ -2,7 +2,7 @@
 {
   imports = [ 
     home-manager.nixosModules.home-manager 
-  #  ./waybar/default.nix 
+    ./waybar/default.nix 
   ]; 
 
   users.users.jsw = {
@@ -30,8 +30,8 @@
     services.udiskie.enable = true;
 
     imports = [ 
-    #  ./hyprland.nix 
-    #  ./wofi/default.nix 
+      ./hyprland.nix 
+      ./wofi/default.nix 
       ./git.nix 
       ./fish.nix 
       ./alacritty.nix 

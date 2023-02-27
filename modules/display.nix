@@ -6,7 +6,6 @@
     displayManager = {
       lightdm.enable = true;	
     };
-    windowManager.i3.enable = true;
   };
   hardware.opengl = {
     driSupport = true;

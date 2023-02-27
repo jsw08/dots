@@ -15,7 +15,7 @@
     # General modules
     ../../modules/default.nix
     ../../modules/display.nix
-#    ../../modules/hyprland.nix
+    ../../modules/hyprland.nix
     ../../modules/pipewire.nix
     ../../modules/bluetooth.nix
     ../../modules/games.nix
@@ -23,15 +23,13 @@
 
   # Autologin
   services.xserver.displayManager = {
-    #defaultSession = "hyprland";
-    #defaultSession = "none+i3";
+    defaultSession = "hyprland";
     autoLogin = {
       enable = true;
       user = "jsw";
     };
   };
 
-  services.xserver.windowManager.i3.enable = true;
   networking.hostName = "jsw-pc";
 }
 
