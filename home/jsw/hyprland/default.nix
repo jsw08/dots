@@ -3,7 +3,7 @@
   imports = [ hyprland.homeManagerModules.default ];
 
   services.dunst.enable = true;
-  home.file.".config/hypr/background.jpg".source = ./background.jpg;
+  home.file.".config/hypr/background.png".source = ./background.png;
   wayland.windowManager.hyprland = {
     enable = true;
     nvidiaPatches = true;
@@ -18,7 +18,7 @@
 			# Autostart
 			# exec-once=/usr/lib/polkit-kde-authentication-agent-1
 			exec-once = waybar
-			exec-once = swaybg -m fit -i /home/jsw/.config/hypr/background.jpg 
+			exec-once = swaybg -m fit -i /home/jsw/.config/hypr/background.png 
 
 			# Keyboard and mouse
 			input {
