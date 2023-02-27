@@ -6,7 +6,7 @@
       vscode-extensions.svelte.svelte-vscode
       vscode-extensions.vscodevim.vim
       vscode-extensions.ms-pyright.pyright
-      vscode-extension-catppuccin-catppuccin-vsc
+      vscode-extensions.catppuccin.catppuccin-vsc
       vscode-extensions.bbenoist.nix
       vscode-extensions.ms-python.python
     ];
