@@ -6,7 +6,6 @@
       vscode-extensions.svelte.svelte-vscode
       vscode-extensions.vscodevim.vim
       vscode-extensions.ms-pyright.pyright
-      vscode-extensions.catppuccin.catppuccin-vsc
       vscode-extensions.bbenoist.nix
       vscode-extensions.ms-python.python
     ];
@@ -20,7 +19,7 @@
       "vim.useSystemClipboard" = true;
       "window.menuBarVisibility" = "hidden";
       "vim.smartRelativeLine" = true;
-      "workbench.colorTheme" = "Catppuccin Macchiato";
+      #"workbench.colorTheme" = "Catppuccin Macchiato";
     };
   };
 }
