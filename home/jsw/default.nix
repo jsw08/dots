@@ -30,7 +30,7 @@
     services.udiskie.enable = true;
 
     imports = [ 
-      ./hyprland.nix 
+      ./hyprland/default.nix 
       ./wofi/default.nix 
       ./git.nix 
       ./fish.nix 
