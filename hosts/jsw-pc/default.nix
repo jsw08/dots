@@ -19,7 +19,6 @@
     ../../modules/pipewire.nix
     ../../modules/bluetooth.nix
     ../../modules/games.nix
-    ../../modules/python.nix
   ];
 
   # Autologin
