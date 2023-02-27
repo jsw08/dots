@@ -8,6 +8,7 @@
       vscode-extensions.ms-pyright.pyright
       vscode-extensions.bbenoist.nix
       vscode-extensions.ms-python.python
+      vscode-extensions.jdinhlife.gruvbox
     ];
     userSettings = {
       "[python]" = {
@@ -19,7 +20,7 @@
       "vim.useSystemClipboard" = true;
       "window.menuBarVisibility" = "hidden";
       "vim.smartRelativeLine" = true;
-      #"workbench.colorTheme" = "Catppuccin Macchiato";
+      "workbench.colorTheme" = "Gruvbox Dark Medium";
     };
   };
 }
