@@ -5,7 +5,7 @@
     enable = true;
     settings = {
       import = [
-        ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+        /home/jsw/.config/alacritty/catppuccin/catppuccin-mocha.yml
       ];
       window.decorations = "none";
       font = {
