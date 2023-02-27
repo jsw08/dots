@@ -33,9 +33,9 @@
     imports = [ 
       ./hyprland/default.nix 
       ./wofi/default.nix 
+      ./alacritty/default.nix 
       ./git.nix 
       ./fish.nix 
-      ./alacritty.nix 
       ./vscode.nix 
     ]; 
   };

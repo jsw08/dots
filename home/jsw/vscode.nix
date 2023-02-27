@@ -6,12 +6,13 @@
       vscode-extensions.svelte.svelte-vscode
       vscode-extensions.vscodevim.vim
       vscode-extensions.ms-pyright.pyright
-      vscode-extensions.github.copilot
+      vscode-extension-catppuccin-catppuccin-vsc
       vscode-extensions.bbenoist.nix
+      vscode-extensions.ms-python.python
     ];
     userSettings = {
       "[python]" = {
-	"editor.formatOnType" = true;
+        "editor.formatOnType" = true;
       };
       "editor.tabSize" = 2;
       "files.autoSave" = "onFocusChange";
@@ -19,7 +20,7 @@
       "vim.useSystemClipboard" = true;
       "window.menuBarVisibility" = "hidden";
       "vim.smartRelativeLine" = true;
-      "workbench.colorTheme" = "GrunBoxTheme";    
+      "workbench.colorTheme": "Catppuccin Macchiato"
     };
   };
 }
