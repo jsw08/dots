@@ -6,7 +6,7 @@
     git
     pfetch
     killall
-    python
+    python3
   ];
   services.udisks2.enable = true; 
 }
