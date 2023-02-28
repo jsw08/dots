@@ -83,11 +83,11 @@
             critical = 15;
           };
           format = "{capacity}% {icon}";
-          format-charging = "{capacity}% ";
-          format-plugged = "{capacity}% ";
+          format-charging = "{capacity}% "; 
+         format-plugged = "{capacity}% ";
           format-alt = "{time} {icon}";
           # "format-good": "", // An empty format will hide the module
-          # "format-full": "",
+          "format-full" = "";
           format-icons = [ "" "" "" "" "" ];
         };
         network = {
@@ -121,50 +121,50 @@
       }];
       style = ''
         * {
-            border: none;
-            border-radius: 0;
-            font-family: monospace;
-            font-weight: bold;
-            font-size: 14px;
-            min-height: 0;
+          border: none;
+          border-radius: 0;
+          font-family: monospace;
+          font-weight: bold;
+          font-size: 14px;
+          min-height: 0;
         }
 
         window#waybar {
-            background: rgba(21, 18, 27, 0);
-            color: #cdd6f4;
+          background: rgba(21, 18, 27, 0);
+          color: #cdd6f4;
         }
 
         tooltip {
-            background: #1e1e2e;
-            border-radius: 10px;
-            border-width: 2px;
-            border-style: solid;
-            border-color: #11111b;
+          background: #1e1e2e;
+          border-radius: 10px;
+          border-width: 2px;
+          border-style: solid;
+          border-color: #11111b;
         }
 
         #workspaces button {
-            padding: 5px;
-            color: #a89984;
-            margin-right: 5px;
+          padding: 5px;
+          color: #a89984;
+          margin-right: 5px;
         }
 
         #workspaces button.active {
-            color: #ebdbb2;
+          color: #ebdbb2;
         }
 
         #workspaces button.focused {
-            color: #a6adc8;
-            border-radius: 10px;
+          color: #a6adc8;
+          border-radius: 10px;
         }
 
         #workspaces button.urgent {
-            color: #fb4934;
-            border-radius: 10px;
+          color: #fb4934;
+          border-radius: 10px;
         }
 
         #workspaces button:hover {
-            background: #504945;
-            border-radius: 10px;
+          background: #504945;
+          border-radius: 10px;
         }
 
         #window,
@@ -177,66 +177,67 @@
         #temperature,
         #cpu,
         #backlight {
-            background: #3c3836;
-            padding: 0px 10px;
-            margin: 3px 0px;
+          background: #3c3836;
+          padding: 0px 10px;
+          margin: 3px 0px;
         }
 
         #tray {
-            border-radius: 10px;
-            margin-right: 10px;
+          border-radius: 10px;
+          margin-right: 10px;
         }
 
         #workspaces {
-            border-radius: 10px;
-            margin-left: 10px;
-            padding-right: 0px;
-            padding-left: 5px;
+          border-radius: 10px;
+          margin-left: 10px;
+          padding-right: 0px;
+          padding-left: 5px;
         }
 
         #temperature {
-            color: #fe8019;
-            border-radius: 10px 0px 0px 10px;
-            border-right: 0px;
-            margin-left: 10px;
+          color: #fe8019;
+          border-radius: 10px 0px 0px 10px;
+          border-right: 0px;
+          margin-left: 10px;
         }
 
         #cpu {
-            color: #8ec07c;
-            border-left: 0px;
-            border-right: 0px;
+          color: #8ec07c;
+          border-left: 0px;
+          border-right: 0px;
         }
 
 
         #window {
-            border-radius: 10px;
-            margin-left: 60px;
-            margin-right: 60px;
+          border-radius: 10px;
+          margin-left: 60px;
+          margin-right: 60px;
         }
 
         #clock {
-            color: #ebdbb2;
-            border-radius: 10px;
-            margin-left: 10px;
+          color: #ebdbb2;
+          border-radius: 10px;
+          margin-left: 10px;
         }
 
         #network {
-            color: #d3869b;
-            border-left: 0px;
-            border-right: 0px;
+          color: #d3869b;
+          border-left: 0px;
+          border-right: 0px;
         }
 
         #pulseaudio {
-            color: #83a598;
-            border-left: 0px;
-            border-right: 0px;
+          color: #83a598;
+          border-left: 0px;
+          border-right: 0px;
         }
 
         #battery {
-            color: #b8bb26;
-            border-radius: 0 10px 10px 0;
-            margin-right: 10px;
-            border-left: 0px;
+          color: #b8bb26;
+          border-radius: 0 10px 10px 0;
+          margin-right: 7px;
+          padding-right: 3px;
+          border-left: 0px;
         }
 
         #backlight {
@@ -244,7 +245,6 @@
           border-left: 0px;
           border-right: 0px;
         }
-
       '';
     };
   };
