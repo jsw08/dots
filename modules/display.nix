@@ -36,8 +36,5 @@
 
   environment.systemPackages = with pkgs; [
     gnome3.adwaita-icon-theme
-    adw-gtk3
-    lxappearance
-    
   ];
 }

@@ -7,7 +7,6 @@
     spotify
     libreoffice
 
-    neovim
     brightnessctl
   ];
   services.power-profiles-daemon.enable = true;
