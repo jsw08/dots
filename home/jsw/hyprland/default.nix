@@ -19,6 +19,7 @@
 			# exec-once=/usr/lib/polkit-kde-authentication-agent-1
 			exec-once = waybar
 			exec-once = swaybg -m fit -i /home/jsw/.config/hypr/background.png 
+			exec-once = hyprctl setcursor "Bibata-Modern-Ice" 24
 
 			# Keyboard and mouse
 			input {

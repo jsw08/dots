@@ -26,4 +26,6 @@
     XCURSOR_THEME="Bibata-Modern-Ice";
     XCURSOR_SIZE="24";
   };
+
+  # Also change the cursor option in hyprland.nix in the autolaunch section
 }
