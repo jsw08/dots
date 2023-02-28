@@ -22,60 +22,59 @@
 
 			# Keyboard and mouse
 			input {
-			kb_layout = us
+				kb_layout = us
 
-			follow_mouse = 1
-			touchpad {
-			natural_scroll = no
-			tap-to-click = yes
-			}
-
-			sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+				follow_mouse = 1
+				touchpad {
+					natural_scroll = no
+					tap-to-click = yes
+				}
+				sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
 			}
 
 			gestures {
-			workspace_swipe = on
+				workspace_swipe = on
 			}
 
 			# General, looks and animations
 			general {
-			gaps_out = 10
-			border_size = 2
-			col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
-			col.inactive_border = rgba(595959aa)
+				gaps_out = 10
+				border_size = 2
+				col.active_border = rgb(665c54)
+				col.inactive_border = rgba(595959aa)
 
-			layout = dwindle
+				layout = dwindle
 			}
 
 			decoration {
-			rounding = 10
-			blur = yes
-			blur_size = 3
-			blur_passes = 1
-			blur_new_optimizations = on
-			active_opacity = 0.9
-			inactive_opacity = 0.8
+				rounding = 10
+				blur = yes
+				blur_size = 3
+				blur_passes = 1
+				blur_new_optimizations = on
+				active_opacity = 0.9
+				inactive_opacity = 0.8
 
-			drop_shadow = yes
-			shadow_range = 4
-			shadow_render_power = 3
-			col.shadow = rgba(1a1a1aee)
+				drop_shadow = yes
+				shadow_range = 4
+				shadow_render_power = 3
+				col.shadow = rgba(1a1a1aee)
 			}
 			animations {
-			enabled = yes
-			bezier = myBezier, 0.05, 0.9, 0.1, 1.05
-			animation = windows, 1, 7, myBezier
-			animation = windowsOut, 1, 7, default, popin 80%
-			animation = border, 1, 10, default
-			animation = borderangle, 1, 8, default
-			animation = fade, 1, 7, default
-			animation = workspaces, 1, 6, default
+				enabled = yes
+				bezier = myBezier, 0.05, 0.9, 0.1, 1.05
+				animation = windows, 1, 7, myBezier
+				animation = windowsOut, 1, 7, default, popin 80%
+				animation = border, 1, 10, default
+				animation = borderangle, 1, 8, default
+				animation = fade, 1, 7, default
+				animation = workspaces, 1, 6, default
 			}
 
 			# Layouts
 			dwindle {
-			pseudotile = yes 
-			preserve_split = yes # you probably want this
+				pseudotile = yes 
+				preserve_split = yes # you probably want this
 			}
 
 			# Keybinds
