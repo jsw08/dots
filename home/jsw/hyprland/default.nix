@@ -88,7 +88,7 @@
 			bind = $mainMod, F, fullscreen
 			bind = $mainMod_SHIFT, E, exit 
 
-			bindr = $mainMod, D, exec, pkill wofi || wofi -i --show drun
+			bindr = $mainMod, D, exec, pkill wofi || wofi -a 
 			bind = $mainMod_SHIFT, D, exec, discord
 			bind = $mainMod, S, exec, spotify
 			bind = $mainMod, A, exec, alacritty -e pulsemixer
