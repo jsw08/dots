@@ -82,13 +82,14 @@
             warning = 30;
             critical = 15;
           };
-          format = "{capacity}% {icon}";
+          format = "{icon}";
           format-charging = "{capacity}% "; 
-         format-plugged = "{capacity}% ";
-          format-alt = "{time} {icon}";
+          format-plugged = "{capacity}% ";
+          format-alt = "{time}";
           # "format-good": "", // An empty format will hide the module
           "format-full" = "";
-          format-icons = [ "" "" "" "" "" ];
+          tooltip-format = "{capacity}%";
+          format-icons = [ "" "" "" "" ];
         };
         network = {
           # "interface" = "wlp2*", // (Optional) To force the use of this interface
@@ -100,7 +101,6 @@
           format-alt = "{ifname}: {ipaddr}/{cidr}";
         };
         pulseaudio = {
-          # "scroll-step": 1, // %, can be a float
           format = "{volume}% {icon} {format_source}";
           format-bluetooth = "{volume}% {icon} {format_source}";
           format-bluetooth-muted = " {icon} {format_source}";
@@ -116,7 +116,6 @@
             car = "";
             default = [ "" "" "" ];
           };
-          on-click = "alacritty pulsemixer";
         };
       }];
       style = ''
@@ -189,7 +188,6 @@
 
         #workspaces {
           border-radius: 10px;
-          margin-left: 10px;
           padding-right: 0px;
           padding-left: 5px;
         }
@@ -197,16 +195,12 @@
         #temperature {
           color: #fe8019;
           border-radius: 10px 0px 0px 10px;
-          border-right: 0px;
           margin-left: 10px;
         }
 
         #cpu {
           color: #8ec07c;
-          border-left: 0px;
-          border-right: 0px;
         }
-
 
         #window {
           border-radius: 10px;
@@ -222,28 +216,19 @@
 
         #network {
           color: #d3869b;
-          border-left: 0px;
-          border-right: 0px;
         }
 
         #pulseaudio {
           color: #83a598;
-          border-left: 0px;
-          border-right: 0px;
         }
 
         #battery {
           color: #b8bb26;
-          border-radius: 0 10px 10px 0;
-          margin-right: 7px;
-          padding-right: 3px;
-          border-left: 0px;
+          border-radius: 0px 10px 10px 0px;
         }
 
         #backlight {
           color: #fabd2f;
-          border-left: 0px;
-          border-right: 0px;
         }
       '';
     };
