@@ -22,11 +22,9 @@
     home.packages = with pkgs; [ 
       glxinfo
       rustdesk
-      pywal
 
       # Obs
       obs-studio
-      qt6.qtwayland
     ];
     services.udiskie.enable = true;
 
@@ -37,6 +35,8 @@
       ./git.nix 
       ./fish.nix 
       ./vscode.nix 
+      ./theme.nix
     ]; 
   };
+
 }

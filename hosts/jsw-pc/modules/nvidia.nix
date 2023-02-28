@@ -29,7 +29,6 @@ in {
   services.xserver.videoDrivers = [ "nvidia" ];
   environment.systemPackages = with pkgs; [
     pr 	
-    libsForQt5.qt5.qtwayland
     libva
     nvidia-vaapi-driver
   ];
