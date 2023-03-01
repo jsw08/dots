@@ -22,6 +22,8 @@
     home.packages = with pkgs; [ 
       glxinfo
       rustdesk
+      nodejs
+      nodePackages.pnpm
 
       # Obs
       obs-studio
