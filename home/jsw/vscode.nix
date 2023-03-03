@@ -21,6 +21,7 @@
       "window.menuBarVisibility" = "hidden";
       "vim.smartRelativeLine" = true;
       "workbench.colorTheme" = "Gruvbox Dark Medium";
+      "svelte.enable-ts-plugin" = true;
     };
   };
 }
