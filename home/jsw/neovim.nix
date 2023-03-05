@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 {
-  packages.neovim = {
+  programs.neovim = {
     enable = true;
     defaultEditor = true;
     withNodeJs = true;
@@ -45,7 +45,6 @@
       set expandtab
       let g:svelte_preprocessors = ['typescript']
 
-      let g:airline_theme='gruvbox'
       set background=dark
       colorscheme gruvbox
 
@@ -77,8 +76,7 @@
         return !col || getline('.')[col - 1]  =~# '\s'
       endfunction
       " provide custom statusline: lightline.vim, vim-airline
-      set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
-
+      set statusline^=%{coc#status()}%{get(b:,'coc_current_function',"")}
     '';
   };
 }
