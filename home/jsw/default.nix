@@ -38,6 +38,7 @@
       ./fish.nix 
       ./vscode.nix 
       ./theme.nix
+      ./neovim.nix
     ]; 
   };
 

@@ -2,7 +2,6 @@
 {
   programs.gh = {
     enable = true;
-    settings.editor = "code";
   };
   programs.git = {
     enable = true;
