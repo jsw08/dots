@@ -24,7 +24,7 @@
 			# Keyboard and mouse
 			input {
 				kb_layout = us
-
+                kb_options = compose:menu, compose:ralt
 				follow_mouse = 1
 				touchpad {
 					natural_scroll = no
