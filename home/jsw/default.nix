@@ -24,6 +24,11 @@
       rustdesk
       nodejs
       nodePackages.pnpm
+      nnn
+      fzf
+      ripgrep
+      bat
+      calc
 
       # Obs
       obs-studio
