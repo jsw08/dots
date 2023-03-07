@@ -35,14 +35,9 @@
 
       set background=dark
       colorscheme gruvbox
-
-      lua require("nvim-autopairs").setup{}
-
-      lua require("toggleterm").setup({})
-      imap <silent> <c-/> :ToggleTerm<CR> 
-      nmap <silent> <c-/> :ToggleTerm<CR> 
-      tmap <silent> <c-/> :ToggleTerm<CR> 
-
+    
+      lua require("nvim-autopairs").setup({})
+      lua require("toggleterm").setup({open_mapping = [[<C-space>]], insert_mappings = true, terminal_mappings = true,})
     '';
   };
 }
