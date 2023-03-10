@@ -13,10 +13,27 @@
       vim-surround
       vim-fugitive
       nvim-treesitter
+      #nvim-treesitter.withPlugins (p: [ p.svelte p.json p.css p.html p.javascript p.typescript p.python ])
+      nvim-treesitter-textobjects
       
-      nvim-lspconfig
-      vim-svelte
+      {
+        plugin = vim-svelte;
+        config = "let g:svelte_preprocessors = ['typescript']";
+      }
       vim-polyglot
+      coc-svelte
+      coc-sh
+      coc-git
+      coc-json
+      coc-css
+      coc-tailwindcss
+      coc-html
+      coc-tslint
+      coc-eslint
+      coc-tsserver
+      coc-prettier
+      coc-python
+
 
       lualine-nvim
       nvim-web-devicons
@@ -26,7 +43,8 @@
     coc = {
       enable = true;
       settings = {
-        "suggest.noselect": true;
+        "suggest.noselect" = true;
+        "svelte.enable-ts-plugin" = true;
       };
     };
     extraConfig = ''
@@ -41,9 +59,6 @@
       set expandtab
       let mapleader = ","
 
-      " Plugin config
-      let g:svelte_preprocessors = ["typescript"]
-
       " Looks
       set termguicolors
       set background=dark
@@ -56,14 +71,15 @@
       nmap <silent><leader><tab> :FzfLua tabs<CR>
     
       " Coc + Bindings
-      set updatetime-300
-      inoremap <silent><expr> <TAB>
+      set updatetime=300
+      nmap <silent> gh <Plug>(coc-type-definition)
+      imap <silent><expr> <TAB>
             \ coc#pum#visible() ? coc#pum#next(1) :
             \ CheckBackspace() ? "\<Tab>" :
             \ coc#refresh()
-      inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-      inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-      inoremap <silent><expr> <c-space> coc#refresh()
+      imap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+      imap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+      imap <silent><expr> <c-space> coc#refresh()
       function! CheckBackspace() abort
         let col = col('.') - 1
         return !col || getline('.')[col - 1]  =~# '\s'
