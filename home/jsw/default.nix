@@ -21,7 +21,6 @@
 
     home.packages = with pkgs; [ 
       glxinfo
-      rustdesk
       nodejs
       nodePackages.pnpm
       nnn
@@ -30,8 +29,9 @@
       bat
       calc
 
-      # Obs
       obs-studio
+      rustdesk
+      webcord
     ];
     services.udiskie.enable = true;
 
