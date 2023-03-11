@@ -2,12 +2,31 @@
 {
   imports = [ hyprland.homeManagerModules.default ];
 
+	services.
   services.dunst.enable = true;
   home.file.".config/hypr/background.png".source = ./background.png;
   wayland.windowManager.hyprland = {
     enable = true;
     nvidiaPatches = true;
     extraConfig = ''
+            # Wayland settings
+            env = HYPRLAND_LOG_WLR, 1
+            env = GTK_IM_MODULE, fcitx
+            env = QT_IM_MODULE, fcitx
+            env = SDL_IM_MODULE, fcitx
+            env = GLFW_IM_MODULE, fcitx
+            env = XMODIFIERS, @im=fcitx
+
+            # Nvidia settings
+            env = LIBVA_DRIVER_NAME,nvidia
+            env = XDG_SESSION_TYPE,wayland
+            # discord doesn't launch with env = GBM_BACKEND,nvidia-drm
+            # firefox crashes with env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+            env = WLR_NO_HARDWARE_CURSORS,1
+
+            # Cursor size
+            env = XCURSOR_SIZE,24
+
 			# Monitor
             env test, test
 			monitor = eDP-1,preferred,0x0,1
@@ -27,11 +46,12 @@
 				kb_layout = us
                 kb_options = compose:menu, compose:ralt
 				follow_mouse = 1
-				touchpad {
-					natural_scroll = no
-					tap-to-click = yes
-				}
-				sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+                # now default
+                #touchpad {
+                #	natural_scroll = no
+                #	tap-to-click = yes
+                #}
+				sensitivity = 0
 			}
 
 			gestures {

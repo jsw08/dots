@@ -5,14 +5,6 @@
     enable = true;
     nvidiaPatches = true;
   };
-  environment.sessionVariables = {
-    HYPRLAND_LOG_WLR = "1";
-    GTK_IM_MODULE = "fcitx";
-    QT_IM_MODULE = "fcitx";
-    SDL_IM_MODULE = "fcitx";
-    GLFW_IM_MODULE = "fcitx";
-    XMODIFIERS = "@im=fcitx";
-  };
   nix.settings = {
     substituters = [
       "https://hyprland.cachix.org"
@@ -30,5 +22,7 @@
     swaybg 
     libsForQt5.qt5.qtwayland
     qt6.qtwayland
+    libsForQt5.polkit-kde-agent
    ];
+  environment.etc."polkit-kde-agent/agent".source = "${libsForQt5.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1";
 }

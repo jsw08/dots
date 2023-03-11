@@ -6,8 +6,6 @@ let
     export __GLX_VENDOR_LIBRARY_NAME=nvidia
     export __VK_LAYER_NV_optimus=NVIDIA_only
     export LIBVA_DRIVER_NAME=nvidia
-    export XDG_SESSION_TYPE=wayland
-    export __GLX_VENDOR_LIBARY_NAME=nvidia
     export WLR_NO_HARDWARE_CURSORS=1
 
     #GBM_BACKEND="nvidia-drm";
@@ -18,13 +16,6 @@ in {
   boot.extraModprobeConfig = ''
     options nvidia-drm modeset=1
   '';
-  environment.sessionVariables = {
-    LIBVA_DRIVER_NAME = "nvidia";
-    XDG_SESSION_TYPE = "wayland";
-    #GBM_BACKEND="nvidia-drm";
-    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-    WLR_NO_HARDWARE_CURSORS = "1";
-  };
 
   services.xserver.videoDrivers = [ "nvidia" ];
   environment.systemPackages = with pkgs; [
