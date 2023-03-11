@@ -31,7 +31,7 @@
 
       obs-studio
       rustdesk
-      webcord
+      discord
     ];
     services.udiskie.enable = true;
 
