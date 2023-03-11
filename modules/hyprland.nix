@@ -24,5 +24,5 @@
     qt6.qtwayland
     libsForQt5.polkit-kde-agent
    ];
-  environment.etc."polkit-kde-agent/agent".source = "${libsForQt5.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1";
+  environment.etc."polkit-kde-agent/agent".source = "${pkgs.libsForQt5.polkit-kde-agent}/libexec/polkit-kde-authentication-agent-1";
 }

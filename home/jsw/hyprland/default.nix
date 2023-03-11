@@ -2,7 +2,6 @@
 {
   imports = [ hyprland.homeManagerModules.default ];
 
-	services.
   services.dunst.enable = true;
   home.file.".config/hypr/background.png".source = ./background.png;
   wayland.windowManager.hyprland = {
