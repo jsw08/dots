@@ -9,11 +9,9 @@
     steam = pkgs.steam.override {
       extraPkgs = pkgs: with pkgs; [
         libgdiplus
+        zulu
       ];
     };
   };
   programs.java.enable = true; 
-  environment.systemPackages = with pkgs; [
-    (steam.override { withJava = true; })
-  ];
 }

@@ -12,14 +12,17 @@
 
       vim-surround
       vim-fugitive
-      nvim-treesitter
-      #nvim-treesitter.withPlugins (p: [ p.svelte p.json p.css p.html p.javascript p.typescript p.python ])
+      (nvim-treesitter.withPlugins (ps: with ps; [ 
+        html
+        css
+        javascript
+        typescript
+        svelte
+        python 
+      ]))
       nvim-treesitter-textobjects
       
-      {
-        plugin = vim-svelte;
-        config = "let g:svelte_preprocessors = ['typescript']";
-      }
+      vim-svelte
       vim-polyglot
       coc-svelte
       coc-sh
@@ -58,6 +61,7 @@
       set shiftwidth=4
       set expandtab
       let mapleader = ","
+      let g:svelte_preprocessors = ['typescript']
 
       " Looks
       set termguicolors

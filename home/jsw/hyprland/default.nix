@@ -9,6 +9,7 @@
     nvidiaPatches = true;
     extraConfig = ''
 			# Monitor
+            env test, test
 			monitor = eDP-1,preferred,0x0,1
 			workspace = eDP-1,5
 

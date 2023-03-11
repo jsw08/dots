@@ -19,9 +19,6 @@
     ../../modules/pipewire.nix
     ../../modules/bluetooth.nix
     ../../modules/games.nix
-
-    # Creating docker file so that i can move it to my server later
-#    ../../modules/docker/default.nix
   ];
 
   # Autologin
