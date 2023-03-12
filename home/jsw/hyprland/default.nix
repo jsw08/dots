@@ -14,7 +14,7 @@
             env = QT_IM_MODULE, fcitx
             env = SDL_IM_MODULE, fcitx
             env = GLFW_IM_MODULE, fcitx
-            env = MOZ_ENABLE_WAYLAND
+            env = MOZ_ENABLE_WAYLAND, 1
             env = XMODIFIERS, @im=fcitx
 
             # Nvidia settings

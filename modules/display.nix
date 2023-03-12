@@ -30,10 +30,10 @@
     gelasio
     merriweather
     source-code-pro
-    nerdfonts
     jetbrains-mono
   ];
 
+#    nerdfonts
   environment.systemPackages = with pkgs; [
     gnome3.adwaita-icon-theme
   ];
