@@ -3,7 +3,7 @@
   imports = [ hyprland.homeManagerModules.default ];
 
   services.dunst.enable = true;
-  home.file.".config/hypr/background.png".source = ./background.png;
+  home.file.".config/hypr/background.jpg".source = ./background.jpg;
   wayland.windowManager.hyprland = {
     enable = true;
     nvidiaPatches = true;
@@ -37,7 +37,7 @@
 			# Autostart
 			exec-once=/etc/polkit-kde-agent/agent
 			exec-once = waybar
-			exec-once = swaybg -m fit -i /home/jsw/.config/hypr/background.png 
+			exec-once = swaybg -m fit -i /home/jsw/.config/hypr/background.jpg 
 			exec-once = hyprctl setcursor "Bibata-Modern-Ice" 24
 
 			# Keyboard and mouse
@@ -61,8 +61,8 @@
 			general {
 				gaps_out = 10
 				border_size = 2
-				col.active_border = rgb(665c54)
-				col.inactive_border = rgba(595959aa)
+				col.active_border = rgb(24283b)
+				col.inactive_border = rgb(c0caf5)
 
 				layout = dwindle
 			}
@@ -73,8 +73,8 @@
 				blur_size = 3
 				blur_passes = 1
 				blur_new_optimizations = on
-				active_opacity = 0.9
-				inactive_opacity = 0.8
+				active_opacity = 0.95
+				inactive_opacity = 0.85
 
 				drop_shadow = yes
 				shadow_range = 4
