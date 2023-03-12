@@ -31,11 +31,6 @@
       rustdesk
       discord
     ];
-    nixpkgs.overlays = [
-      (self: super: {
-        discord = super.discord.override { withOpenASAR = true; };
-      })
-    ];
 
     services.udiskie.enable = true;
 
