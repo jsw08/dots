@@ -12,6 +12,7 @@
       pull="git pull";
       push="git push origin";
       rmouse="remouse --key ~/.ssh/id_rsa  --monitor 1 --orientation left --evdev --mode stretch";
+      cat="bat";
     };
     interactiveShellInit = "set fish_greeting ''; pfetch";
   };	

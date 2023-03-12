@@ -25,9 +25,10 @@ let screenshot = pkgs.writeShellScriptBin "screenshot" ''
 in {
   environment.systemPackages = with pkgs; [
     bash
-    ivm
+    imv
     grim
     jq
     slurp
+    screenshot
   ];
 }
