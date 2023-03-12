@@ -32,8 +32,7 @@
 			monitor = eDP-1,preferred,0x0,1
 			workspace = eDP-1,5
 
-			monitor = HDMI-A-2,preferred,1920x0,1
-			workspace = HDMI-A-2,
+			monitor = HDMI-A-2,1920x1080@120,1920x0,1
 
 			# Autostart
 			exec-once=/etc/polkit-kde-agent/agent
