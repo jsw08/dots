@@ -33,6 +33,12 @@
       rustdesk
       discord
     ];
+    nixpkgs.overlays = [
+      (self: super: {
+        discord = super.discord.override { withOpenASAR = true; };
+      })
+    ];
+
     services.udiskie.enable = true;
 
     imports = [ 
@@ -44,6 +50,7 @@
       ./vscode.nix 
       ./theme.nix
       ./neovim.nix
+      ./ssh.nix
     ]; 
   };
 

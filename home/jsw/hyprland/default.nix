@@ -14,13 +14,14 @@
             env = QT_IM_MODULE, fcitx
             env = SDL_IM_MODULE, fcitx
             env = GLFW_IM_MODULE, fcitx
+            env = MOZ_ENABLE_WAYLAND
             env = XMODIFIERS, @im=fcitx
 
             # Nvidia settings
             env = LIBVA_DRIVER_NAME,nvidia
             env = XDG_SESSION_TYPE,wayland
             # discord doesn't launch with env = GBM_BACKEND,nvidia-drm
-            # firefox crashes with env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+            #env = __GLX_VENDOR_LIBRARY_NAME,nvidia # possible firefox crashes with
             env = WLR_NO_HARDWARE_CURSORS,1
 
             # Cursor size
