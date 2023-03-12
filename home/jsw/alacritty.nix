@@ -11,6 +11,7 @@
         size = 12;
       };
 
+      # tokyonight storm
       colors = { 
         primary = {
             background = "0x24283b";
