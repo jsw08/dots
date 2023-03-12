@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 {
-  home.packages = [ libresprite ];
+  home.packages = [ pkgs.libresprite ];
   home.file.".config/libresprite/data/skins/dark".source = ./Neutral-Dark-Theme-main;	
 }
