@@ -51,6 +51,7 @@
       ./theme.nix
       ./neovim.nix
       ./ssh.nix
+      ./libresprite/default.nix
     ]; 
   };
 
