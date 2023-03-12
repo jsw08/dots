@@ -31,9 +31,9 @@
     merriweather
     source-code-pro
     jetbrains-mono
+    nerdfonts
   ];
 
-#    nerdfonts
   environment.systemPackages = with pkgs; [
     gnome3.adwaita-icon-theme
   ];

@@ -19,6 +19,7 @@
     ../../modules/pipewire.nix
     ../../modules/bluetooth.nix
     ../../modules/games.nix
+    ../../modules/wl_screeny.nix
   ];
 
   # Autologin

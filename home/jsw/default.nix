@@ -23,11 +23,9 @@
       glxinfo
       nodejs
       nodePackages.pnpm
-      nnn
-      fzf
-      ripgrep
       bat
       calc
+      remarkable-mouse
 
       obs-studio
       rustdesk
