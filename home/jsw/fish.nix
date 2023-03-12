@@ -11,6 +11,7 @@
       commit="git commit -m";
       pull="git pull";
       push="git push origin";
+      rmouse="remouse --key ~/.ssh/id_rsa  --monitor 1 --orientation left --evdev";
     };
     interactiveShellInit = "set fish_greeting ''; pfetch";
   };	
@@ -18,5 +19,4 @@
     enable = true;
     enableFishIntegration = true;
   };
-
 }
