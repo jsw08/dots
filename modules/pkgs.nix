@@ -4,9 +4,8 @@
   environment.systemPackages = with pkgs; [
     neovim
     git
-    pfetch
     killall
-    python3
+    bat
   ];
   services.udisks2.enable = true; 
 }

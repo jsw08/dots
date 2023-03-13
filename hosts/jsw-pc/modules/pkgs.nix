@@ -7,6 +7,8 @@
     libreoffice
 
     brightnessctl
+    python3
+    pfetch
   ];
   services.power-profiles-daemon.enable = true;
 }

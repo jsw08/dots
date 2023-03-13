@@ -23,7 +23,6 @@
       glxinfo
       nodejs
       nodePackages.pnpm
-      bat
       calc
       remarkable-mouse
 
