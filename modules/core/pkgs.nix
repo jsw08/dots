@@ -6,6 +6,7 @@
     git
     unzip
     neovim
+    killall
 
     firefox-bin
     alacritty
