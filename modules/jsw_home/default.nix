@@ -10,7 +10,7 @@
     initialPassword = "changeme";
     home = "/home/jsw/";
     description = "Jurn Wubben";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "dotfiles" ];
     shell = pkgs.fish;
   };
 
