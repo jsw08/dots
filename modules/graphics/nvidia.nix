@@ -2,8 +2,8 @@
 {
   services.xserver.videoDrivers = ["nvidia"];
   environment.variables = {
-#    GBM_BACKEND = "nvidia-drm"; gtk errors
-#    __GLX_VENDOR_LIBRARY_NAME = "nvidia"; firefox errors
+    #GBM_BACKEND = "nvidia-drm"; # firefox errors 
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia"; 
     LIBVA_DRIVER_NAME = "nvidia";
   };
 
