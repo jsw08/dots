@@ -2,9 +2,9 @@
 {
   services.xserver.videoDrivers = ["nvidia"];
   environment.variables = {
-    GBM_BACKEND = "nvidia-drm";
+#    GBM_BACKEND = "nvidia-drm"; gtk errors
+#    __GLX_VENDOR_LIBRARY_NAME = "nvidia"; firefox errors
     LIBVA_DRIVER_NAME = "nvidia";
-    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
   };
 
   environment.systemPackages = with pkgs; [
@@ -24,7 +24,6 @@
       driSupport = true;
       driSupport32Bit = true;
       extraPackages = with pkgs; [
-        pr
         libva
         nvidia-vaapi-driver
       ];
