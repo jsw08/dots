@@ -6,6 +6,7 @@
     nodePackages.pnpm
     calc
     remarkable-mouse
+    bat
 
     obs-studio
     rustdesk
