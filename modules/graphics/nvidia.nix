@@ -12,20 +12,32 @@ let
     exec "$@"
   '';
 in {
-  services.xserver.videoDrivers = [ "nvidia" ];
-  boot.initrd.kernelModules = [ "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
-  boot.extraModprobeConfig = ''
-    options nvidia-drm modeset=1
-  '';
+  services.xserver.videoDrivers = ["nvidia"];
+#  boot.initrd.kernelModules = [ "nvidia" "nvidia_modeset" "nvidia_uvm" "nvidia_drm" ];
+#  boot.extraModprobeConfig = ''
+#   options nvidia-drm modeset=1
+#'';
 
   environment.variables = {
-    LIBVA_DRIVER_NAME = "nvidia";
-    XDG_SESSION_TYPE = "wayland";
     GBM_BACKEND = "nvidia-drm";
-    __GLX_VENDOR_LIBRARY_NAME = "nvidia"; # possible firefox crashes with
-    WLR_NO_HARDWARE_CURSORS = "1";
+    LIBVA_DRIVER_NAME = "nvidia";
+    __GLX_VENDOR_LIBRARY_NAME = "nvidia";
   };
-  
+
+  environment.systemPackages = with pkgs; [
+    vulkan-loader
+    vulkan-validation-layers
+    vulkan-tools
+  ];
+
+  hardware = {
+    nvidia = {
+      open = true;
+      powerManagement.enable = true;
+      modesetting.enable = true;
+    };
+  };
+
   hardware.opengl = {
     enable = true;
     driSupport = true;

@@ -11,6 +11,7 @@
     ./security.nix
     ./services.nix
     ./users.nix
+    ./time.nix
   ];
   system.stateVersion = "23.05";
 }

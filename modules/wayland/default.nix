@@ -6,13 +6,13 @@
   services.xserver = {
     enable = true; # Replace this piece of shit with greet
     displayManager = {
-      sddm = {
+      lightdm = {
         enable = true;  
-        settings = {
-          General = {
-            DisplayServer = "wayland";
-          };
-        };
+        #settings = {
+        #  General = {
+        #    DisplayServer = "wayland";
+        #  };
+        #};
       };
     };
   };
