@@ -24,6 +24,7 @@
     imports = [ 
       ./packages.nix
 
+      ./firefox/default.nix
       ./alacritty/default.nix
       ./dunst/default.nix
       ./fish/default.nix
