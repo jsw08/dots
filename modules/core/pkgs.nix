@@ -7,12 +7,12 @@
     unzip
     neovim
     killall
+    python3
 
     firefox-bin
     alacritty
     libreoffice
     brightnessctl
-    python3
     pfetch
   ];  
 }

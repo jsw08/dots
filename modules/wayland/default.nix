@@ -1,21 +1,11 @@
 { config, pkgs, inputs, ... }: 
 {
-  imports = [ inputs.hyprland.nixosModules.default ./fonts.nix ./variables.nix ];
-
-  # Display manager
-  services.xserver = {
-    enable = true; # Replace this piece of shit with greet
-    displayManager = {
-      lightdm = {
-        enable = true;  
-        #settings = {
-        #  General = {
-        #    DisplayServer = "wayland";
-        #  };
-        #};
-      };
-    };
-  };
+  imports = [ 
+    inputs.hyprland.nixosModules.default 
+    ./fonts.nix 
+    ./variables.nix 
+    ./greetd.nix
+  ];
 
   # Hyprland
   programs.hyprland = {
