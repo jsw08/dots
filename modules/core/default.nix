@@ -12,6 +12,7 @@
     ./services.nix
     ./users.nix
     ./time.nix
+    ./streamdeck.nix
   ];
   system.stateVersion = "23.05";
 }
