@@ -3,11 +3,18 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      window.decorations = "none";
-      font = {
-      normal = {
-        family = "monospace";
+      window = {
+        decorations = "none";
+        padding = {
+          x = 5;
+          y = 5;
+        };
       };
+
+      font = {
+        normal = {
+          family = "monospace";
+        };
         size = 12;
       };
 

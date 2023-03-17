@@ -2,7 +2,7 @@
 {
   imports = [ 
     inputs.home-manager.nixosModules.home-manager 
-    ./waybar/default.nix 
+    #./waybar/default.nix 
   ]; 
 
   users.users.jsw = {
@@ -24,6 +24,8 @@
     imports = [ 
       ./packages.nix
 
+      ./streamdeck/default.nix
+      ./eww/default.nix
       ./firefox/default.nix
       ./alacritty/default.nix
       ./dunst/default.nix
@@ -35,9 +37,8 @@
       ./packages.nix
       ./ssh/default.nix
       ./theme/default.nix
-      ./vscode/default.nix
+#      ./vscode/default.nix
       ./wofi/default.nix
     ];
   };
-
 }
