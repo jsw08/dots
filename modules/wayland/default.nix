@@ -5,6 +5,7 @@
     ./fonts.nix 
     ./variables.nix 
     ./greetd.nix
+    ./screenshot.nix
   ];
 
   # Hyprland
