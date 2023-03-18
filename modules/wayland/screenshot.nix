@@ -1,30 +1,44 @@
-{ config, pkgs, ... }: 
+{ config, pkgs, inputs, ... }: 
 let screenshot = pkgs.writeShellScriptBin "screenshot" ''
-  #!/usr/bin/env bash
+  #!/bin/sh
 
-  tmp=$(mktemp)
-  WORKSPACES="$(hyprctl monitors -j | jq -r 'map(.activeWorkspace.id)')"
-  WINDOWS="$(hyprctl clients -j | jq -r --argjson workspaces "$WORKSPACES" 'map(select([.workspace.id] | inside($workspaces)))')"
+  tmpImage=$(mktemp /tmp/tmpImage.XXXXXXXXXX --suffix .png) # Makes a temporary file to save the screenshot to
 
-  grim -o $(hyprctl monitors -j | jq -r ".[] | select(.focused == true) | .name") $tmp
-  imv -w "PAUSESHOT" -f $tmp &
+  case $1 in
+    --monitor)
+      grimblast save output "$tmpImage"
+      ;;
+    --selection)
+      grimblast save area "$tmpImage"
+      ;;
+    --active)
+      grimblast save active "$tmpImage"
+      ;;
+    *)
+      echo 'wrong or missing argument'
+      ;;
+  esac
 
-  pid=$!
-  GEOM=$(echo "$WINDOWS" | jq -r '.[] | "\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' | slurp)
+  tmpImageSize=$(wc -c <"$tmpImage")
 
-  grim -g "$GEOM" -
-  kill $pid
-  swappy $tmp
-  rm $tmp
+  if [ $tmpImageSize != 0 ]; then
+          cp $tmpImage $HOME/Pictures/Screenshots/"Screenshot from $(date '+%d.%m.%y %H:%M:%S').png"
+          curl --request POST \
+          --url https://api.upload.systems/images/upload \
+          --header 'Content-Type: multipart/form-data' \
+          --form key=$(cat $HOME/Documents/uploadKey) \
+          --form file="@$tmpImage" | \
+          jq -r '.url' | wl-copy -n
+          dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
+          exit $?
+  fi
+
+  echo "Screenshot cancelled."
+  exit 1
 ''; 
 in {
   environment.systemPackages = with pkgs; [
-    bash
-    imv
-    grim
-    jq
-    slurp
-    swappy
     screenshot
+    inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
   ];
 }
