@@ -141,8 +141,8 @@
 			binde=, XF86AudioPause, exec, playerctl play-pause 
 			binde=, XF86AudioNext, exec, playerctl next
 			binde=, XF86AudioPrev, exec, playerctl previous
-			binde-, XF86MonBrightnessUp, exec, brightnessctl set 10%+
-			binde-, XF86MonBrightnessDown, exec, brightnessctl set 10%-
+			binde=, XF86MonBrightnessUp, exec, brightnessctl set 10%+
+			binde=, XF86MonBrightnessDown, exec, brightnessctl set 10%-
 
 			bind = $mainMod, H, movefocus, l
 			bind = $mainMod, L, movefocus, r
