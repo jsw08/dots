@@ -13,6 +13,7 @@
     ./users.nix
     ./time.nix
     ./streamdeck.nix
+    ./update.nix
   ];
   
   # Nix settings
