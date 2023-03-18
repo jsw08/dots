@@ -95,21 +95,19 @@
 				col.shadow = rgba(1a1a1aee)
 			}
 			animations {
-                enabled = yes
-
-                bezier = myBezier, 0.05, 0.9, 0.1, 1.05
-                bezier = myBezier2, 0.65, 0, 0.35, 1
-
-                bezier=slow,0,0.85,0.3,1
-                bezier=overshot,0.7,0.6,0.1,1.1
-                bezier=bounce,1,1.6,0.1,0.85
-                bezier=slingshot,1,-1,0.15,1.25
-                bezier=nice,0,6.9,0.5,-4.20
+                enabled=1
+               
+                bezier = overshot, 0.05, 0.9, 0.1, 1.05
+                bezier = smoothOut, 0.36, 0, 0.66, -0.56
+                bezier = smoothIn, 0.25, 1, 0.5, 1
                 
-                animation=windows,1,5,bounce,popin
-                animation=border,1,20,default
-                animation=fade,1,5,default
-                animation=workspaces,1,5,overshot,slide
+                animation = windows, 1, 5, overshot, slide
+                animation = windowsOut, 1, 4, smoothOut, slide
+                animation = windowsMove, 1, 4, default
+                animation = border, 1, 10, default
+                animation = fade, 1, 5, smoothIn
+                animation = fadeDim, 1, 5, smoothIn
+                animation = workspaces, 1, 6, default, slidevert
 			}
 
 			# Layouts
