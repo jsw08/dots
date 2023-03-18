@@ -5,6 +5,7 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     webcord.url = "github:fufexan/webcord-flake";
     hyprland.url = "github:hyprwm/Hyprland/";
+    hyprland-contrib.url = "github:hyprwm/contrib";
 
     home-manager = {
       url = "github:nix-community/home-manager";
