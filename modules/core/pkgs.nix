@@ -12,6 +12,7 @@
     firefox-bin
     alacritty
     libreoffice
+    spotify
     brightnessctl
     pfetch
   ];  
