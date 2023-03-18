@@ -57,11 +57,12 @@
 				kb_layout = us
                 kb_options = compose:menu, compose:ralt
 				follow_mouse = 1
-                # now default
-                #touchpad {
-                #	natural_scroll = no
-                #	tap-to-click = yes
-                #}
+                touchpad {
+                    # now default
+                    #natural_scroll = no
+                    #tap-to-click = yes
+                    drag_lock = true
+                }
 				sensitivity = 0
 			}
 
