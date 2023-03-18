@@ -1,0 +1,81 @@
+[[keys]]
+  index = 4
+  [keys.widget]
+    id = "time"
+    [keys.widget.config]
+      format = "%H;%i;%s"
+      font = "bold;regular;thin" # optional
+      color = "#fefefe" # optional
+      layout = "0x0+72x24;0x24+72x24;0x48+72x24" # optional
+
+[[keys]]
+  index = 1
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "firefox"
+      #layout = "0x0+72x20;0x20+72x52" # optional
+
+[[keys]]
+  index = 2
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "discord"
+      #layout = "0x0+72x20;0x20+72x52" # optional
+
+[[keys]]
+  index = 3
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "spotify"
+      #layout = "0x0+72x20;0x20+72x52" # optional
+
+[[keys]]
+  index = 6
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "stem"
+      #layout = "0x0+72x20;0x20+72x52" # optional
+
+[[keys]]
+  index = 7
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "prism"
+      #layout = "0x0+72x20;0x20+72x52" # optional
+
+[[keys]]
+  index = 8
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "mute"
+      #layout = "0x0+72x20;0x20+72x52" # optional
+
+[[keys]]
+  index = 11
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "bar"
+      #layout = "0x0+72x20;0x20+72x52" # optional
+
+[[keys]]
+  index = 12
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = "res"
+      #layout = "0x0+72x20;0x20+72x52" # optional
+
+[[keys]]
+  index = 13
+  [keys.widget]
+    id = "button"
+    [keys.widget.config]
+      label = ""
+      #layout = "0x0+72x20;0x20+72x52" # optional
