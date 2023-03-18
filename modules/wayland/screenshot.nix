@@ -11,16 +11,11 @@ let screenshot = pkgs.writeShellScriptBin "screenshot" ''
 
   pid=$!
   GEOM=$(echo "$WINDOWS" | jq -r '.[] | "\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"' | slurp)
-  grim -g "$GEOM" - > $tmp
 
+  grim -g "$GEOM" -
   kill $pid
-  mv $tmp "$tmp.png"
-
-  bash -c "$@ $tmp.png"
-  cat "$tmp.png" | wl-copy
-  rm "$tmp.png"
-
-  echo "$tmp.png"
+  swappy $tmp
+  rm $tmp
 ''; 
 in {
   environment.systemPackages = with pkgs; [
@@ -29,6 +24,7 @@ in {
     grim
     jq
     slurp
+    swappy
     screenshot
   ];
 }
