@@ -22,14 +22,18 @@ let screenshot = pkgs.writeShellScriptBin "screenshot" ''
   tmpImageSize=$(wc -c <"$tmpImage")
 
   if [ $tmpImageSize != 0 ]; then
-          cp $tmpImage $HOME/Pictures/Screenshots/"Screenshot from $(date '+%d.%m.%y %H:%M:%S').png"
-          curl --request POST \
+          if curl --request POST \
           --url https://api.upload.systems/images/upload \
           --header 'Content-Type: multipart/form-data' \
           --form key=$(cat $HOME/Documents/uploadKey) \
           --form file="@$tmpImage" | \
           jq -r '.url' | wl-copy -n
-          dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your screenshot has been copied to the clipboard"
+          then
+            dunstify -i "$tmpImage" -a "screenshot" "Screenshot Copied" "Your url has been copied to the clipboard"
+          else
+            dunstify -i "$tmpImage" -a "screenshot" "Screenshot failed" "Screenshot failed to upload. Please try again later."
+          fi
+          mv $tmpImage $HOME/Pictures/Screenshots/"Screenshot from $(date '+%d.%m.%y %H:%M:%S').png"
           exit $?
   fi
 
@@ -40,5 +44,6 @@ in {
   environment.systemPackages = with pkgs; [
     screenshot
     inputs.hyprland-contrib.packages.${pkgs.system}.grimblast
+    jq
   ];
 }
