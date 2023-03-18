@@ -1,6 +1,6 @@
 { config, pkgs, inputs, ... }: 
 let screenshot = pkgs.writeShellScriptBin "screenshot" ''
-  #!/bin/sh
+  #!/usr/bin/env sh
 
   tmpImage=$(mktemp /tmp/tmpImage.XXXXXXXXXX --suffix .png) # Makes a temporary file to save the screenshot to
 
