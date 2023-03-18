@@ -1,7 +1,7 @@
 { config, pkgs, ... }: 
 let update = pkgs.writeShellScriptBin "n-update" ''
   #!/usr/bin/env bash
-  TEMP = $(mktemp -d)
+  export TEMP = $(mktemp -d)
 
   cd "$TEMP"
   git clone https://github.com/jsw08/dots "$TEMP"
