@@ -39,6 +39,7 @@
       ./theme/default.nix
 #      ./vscode/default.nix
       ./wofi/default.nix
+      ./gammastep/default.nix
     ];
   };
 }
