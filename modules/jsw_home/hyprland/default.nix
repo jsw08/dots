@@ -148,6 +148,11 @@
 			bind = $mainMod, K, movefocus, u
 			bind = $mainMod, J, movefocus, d
 
+			bind = $mainMod_SHIFT, H, resizeactive, -50 0
+			bind = $mainMod_SHIFT, L, resizeactive, 50 0
+			bind = $mainMod_SHIFT, K, resizeactive, 0 -50
+			bind = $mainMod_SHIFT, J, resizeactive, 0 50
+
 			bind = $mainMod, 1, workspace, 1
 			bind = $mainMod, 2, workspace, 2
 			bind = $mainMod, 3, workspace, 3
