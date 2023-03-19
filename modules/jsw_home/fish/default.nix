@@ -15,6 +15,7 @@
       push="git push origin";
       rmouse="remouse --key ~/.ssh/id_rsa  --monitor 1 --orientation left --evdev --mode stretch";
       cat="bat";
+      bloat="nix path-info -Sh /run/current-system";
     };
     interactiveShellInit = ''
       # TokyoNight Color Palette
