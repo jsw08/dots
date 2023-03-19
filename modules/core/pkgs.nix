@@ -8,6 +8,7 @@
     neovim
     killall
     python3
+    lf
 
     firefox-bin
     alacritty
