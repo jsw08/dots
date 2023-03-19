@@ -1,13 +1,11 @@
 { config, pkgs, ... }:
 {
   fonts.fonts = with pkgs; [
-    font-awesome
-    font-awesome_5
     caladea
     carlito
     dejavu_fonts
     liberation_ttf
-    noto-fonts
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
     noto-fonts-emoji
     overpass
     roboto
@@ -18,6 +16,5 @@
     merriweather
     source-code-pro
     jetbrains-mono
-    nerdfonts
   ];
 }
