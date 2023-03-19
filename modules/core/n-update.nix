@@ -15,12 +15,13 @@ let update = pkgs.writeShellScriptBin "n-update" ''
   echo "Pushing back to github..."
   git push
 
+  echo "Updating system..."
+  sudo nixos-rebuild boot --flake "$TEMP"
+
   echo "Deleting folder..."
   rm -rf "$TEMP"
   cd /
 
-  echo "Updating system..."
-  sudo nixos-rebuild boot --flake "git+https://github.com/jsw08/dots.git"
 ''; 
 in {
   environment.systemPackages = with pkgs; [
