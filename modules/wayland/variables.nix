@@ -11,6 +11,7 @@
     _JAVA_AWT_WM_NONEREPARENTING="1";
     CLUTTER_BACKEND="wayland";
     GDK_BACKEND="wayland";
+    NIXOS_OZONE_WL = "1";
     HYPRLAND_LOG_WLR = "1";
     GTK_IM_MODULE = "fcitx";
     QT_IM_MODULE = "fcitx";
