@@ -40,6 +40,7 @@
 #      ./vscode/default.nix
       ./wofi/default.nix
       ./gammastep/default.nix
+      ./rmview/default.nix
     ];
   };
 }
