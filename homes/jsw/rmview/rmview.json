@@ -1,0 +1,14 @@
+{
+    "ssh": {
+        "address": [
+            "10.11.99.1"
+        ],
+        "auth_method": "key",
+        "key": "/home/jsw/.ssh/id_rsa"
+
+    },
+    "orientation": "auto",
+    "pen_size": 15,
+    "pen_color": "blue",
+    "pen_trail": 200
+}

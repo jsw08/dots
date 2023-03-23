@@ -9,6 +9,4 @@
     };
   };
   users.users.root.initialPassword = "changeme";
-  users.groups.dotfiles.gid = 995;
-    
 }
