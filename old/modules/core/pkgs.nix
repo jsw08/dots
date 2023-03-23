@@ -8,6 +8,13 @@
     neovim
     killall
     python3
-    htop
+    lf
+
+    firefox-bin
+    alacritty
+    libreoffice
+    spotify
+    brightnessctl
+    pfetch
   ];  
 }

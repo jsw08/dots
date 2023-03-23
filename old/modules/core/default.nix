@@ -2,12 +2,18 @@
 {
   # Import core modules
   imports = [
+    ./bluetooth.nix
     ./bootloader.nix
-    ./default.nix
-    ./networking/default.nix
+    ./games.nix
+    ./network.nix
+    ./pipewire.nix
     ./pkgs.nix
     ./security.nix
+    ./services.nix
+    ./users.nix
     ./time.nix
+    ./streamdeck.nix
+    ./n-update.nix
   ];
   
   # Nix settings
